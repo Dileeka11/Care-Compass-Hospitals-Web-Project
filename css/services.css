@@ -1,0 +1,113 @@
+/* General Page Styling */
+.services-page {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.services-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .services-image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+  }
+  
+  @media (max-width: 768px) {
+    .services-section {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .services-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+  
+    .services-image img {
+        max-width: 80%;
+    }
+  }
+
+/* Card Styling */
+.fixed-card {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fixed-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #0056b3;
+}
+
+.btn-custom {
+    background-color: #0056b3;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #003f7f;
+    color: #fff;
+}
+
+/* Search Form */
+.input-group {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-group .form-control {
+    border-radius: 5px 0 0 5px;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+.input-group .btn-primary {
+    border-radius: 0 5px 5px 0;
+    background-color: #0056b3;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.input-group .btn-primary:hover {
+    background-color: #003f7f;
+}
+
+/* Popup Notification */
+.notification-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

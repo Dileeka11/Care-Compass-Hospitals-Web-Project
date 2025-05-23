@@ -1,0 +1,322 @@
+/* styles.css */
+
+:root {
+    --primary-color: #2c5282;
+    --secondary-color: #4299e1;
+    --accent-color: #48bb78;
+    --text-color: #2d3748;
+    --background-color: #f7fafc;
+    --white: #ffffff;
+    --gray-100: #f7fafc;
+    --gray-200: #edf2f7;
+    --gray-300: #e2e8f0;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Reset and Base Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(rgba(44, 82, 130, 0.7), rgba(44, 82, 130, 0.7)),
+                url('../uploads/images/hospital-hero.jpg.jpg') center/cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    margin-top: 4rem;
+  }
+  
+  .hero-section .container {
+    text-align: center;
+    padding: 2rem;
+    margin-left: 350px;
+  }
+  
+  /* Services Section */
+.services-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.services-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.services-content h3 {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.services-content h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.services-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.btn-services {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff8200; /* Orange button */
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-services:hover {
+  background-color: #e67300;
+}
+
+.services-image {
+  flex: 1;
+  text-align: center;
+}
+
+.services-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+  .services-section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .services-content {
+      padding-right: 0;
+      margin-bottom: 2rem;
+  }
+
+  .services-image img {
+      max-width: 80%;
+  }
+}
+
+  .hero-section h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* Welcome Section */
+.welcome-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--white);
+  color: var(--text-color);
+  margin-top: 4rem;
+}
+
+.welcome-section h3 {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.welcome-section h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.welcome-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: var(--text-color);
+}
+
+.btn-about {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff8200; /* Orange button */
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-about:hover {
+  background-color: #e67300;
+}
+
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    padding: 16px;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .fade {
+    animation: fade 1.5s ease-in-out;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Lab Facilities Section */
+.lab-facilities-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.lab-facilities-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.lab-facilities-content h3 {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.lab-facilities-content h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.lab-facilities-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.btn-lab-facilities {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff8200; /* Orange button */
+  color: var(--white);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-lab-facilities:hover {
+  background-color: #e67300;
+}
+
+.lab-facilities-image {
+  flex: 1;
+  text-align: center;
+}
+
+.lab-facilities-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+/* Responsive Design for Lab Facilities Section */
+@media (max-width: 768px) {
+  .lab-facilities-section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .lab-facilities-content {
+      padding-right: 0;
+      margin-bottom: 2rem;
+  }
+
+  .lab-facilities-image img {
+      max-width: 80%;
+  }
+}
